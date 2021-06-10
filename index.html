@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col-md-1 col-sm-2 hour pt-4">9:00AM</div>
+        <input id="9Row" class="user-event-input col-md-10 col-sm-8 event-input-block">
+        <div class="col-md-1 col-sm-2 saveBtn" data-hour=9><img class="save-icon" src="./icons/small-save-icon.jpg" alt="save"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 col-sm-2 hour pt-4 ">10:00AM</div>
+        <input id="10Row" class="user-event-input col-md-10 col-sm-8 event-input-block">
+        <div class="col-md-1 col-sm-2 saveBtn" data-hour=10><img class="save-icon" src=./icons/small-save-icon.jpg alt="save"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 col-sm-2 hour pt-4">11:00AM</div>
+        <input id="11Row" class="user-event-input col-md-10 col-sm-8 event-input-block">
+        <div class="col-md-1 col-sm-2 saveBtn" data-hour=11><img class="save-icon" src=./icons/small-save-icon.jpg alt="save"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 col-sm-2 hour pt-4">12:00PM</div>
+        <input id="12Row" class="user-event-input col-md-10 col-sm-8 event-input-block">
+        <div class="col-md-1 col-sm-2 saveBtn" data-hour=12><img class="save-icon" src=./icons/small-save-icon.jpg alt="save"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 col-sm-2 hour pt-4">1:00PM</div>
+        <input id="1Row" class="user-event-input col-md-10 col-sm-8 event-input-block">
+        <div class="col-md-1 col-sm-2 saveBtn" data-hour=1><img class="save-icon" src=./icons/small-save-icon.jpg alt="save"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 col-sm-2 hour pt-4">2:00PM</div>
+        <input id="2Row" class="user-event-input col-md-10 col-sm-8 event-input-block">
+        <div class="col-md-1 col-sm-2 saveBtn" data-hour=2><img class="save-icon" src=./icons/small-save-icon.jpg alt="save"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 col-sm-2 hour pt-4">3:00PM</div>
+        <input id="3Row" class="user-event-input col-md-10 col-sm-8 event-input-block">
+        <div class="col-md-1 col-sm-2 saveBtn" data-hour=3><img class="save-icon" src=./icons/small-save-icon.jpg alt="save"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 col-sm-2 hour pt-4">4:00PM</div>
+        <input id="4Row" class="user-event-input col-md-10 col-sm-8 event-input-block">
+        <div class="col-md-1 col-sm-2 saveBtn" data-hour=4><img class="save-icon" src=./icons/small-save-icon.jpg alt="save"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 col-sm-2 hour pt-4">5:00PM</div>
+        <input id="5Row" class="user-event-input col-md-10 col-sm-8 event-input-block">
+        <div class="col-md-1 col-sm-2 saveBtn" data-hour=5><img class="save-icon" src=./icons/small-save-icon.jpg alt="save"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 col-sm-2 hour pt-4">6:00PM</div>
+        <input id="6Row" class="user-event-input col-md-10 col-sm-8 event-input-block">
+        <div class="col-md-1 col-sm-2 saveBtn" data-hour=5><img class="save-icon" src=./icons/small-save-icon.jpg alt="save"></div>
+      </div>
+      </div>
+      <footer>
+          <br />
+      </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  
+</body>
+  
+</html>
