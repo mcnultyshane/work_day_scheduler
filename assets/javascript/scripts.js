@@ -1,18 +1,21 @@
 var timeOfDay = moment().format("HH");
-
+console.log(timeOfDay);
 var timeInteger = parseInt(timeOfDay);
+console.log(timeInteger);
 var saveBtn = $('.saveBtn');
+
+
 
 $("#9Row").attr("data-time", moment("9:00am", "h:mm a").format("HH"));
 $("#10Row").attr("data-time", moment("10:00am", "h:mm a").format("HH"));
 $("#11Row").attr("data-time", moment("11:00am", "h:mm a").format("HH"));
-$("#12Row").attr("data-time", moment("12:00am", "h:mm a").format("HH"));
-$("#1Row").attr("data-time", moment("1:00am", "h:mm a").format("HH"));
-$("#2Row").attr("data-time", moment("2:00am", "h:mm a").format("HH"));
-$("#3Row").attr("data-time", moment("3:00am", "h:mm a").format("HH"));
-$("#4Row").attr("data-time", moment("4:00am", "h:mm a").format("HH"));
-$("#5Row").attr("data-time", moment("5:00am", "h:mm a").format("HH"));
-$("#6Row").attr("data-time", moment("6:00am", "h:mm a").format("HH"));
+$("#12Row").attr("data-time", moment("12:00pm", "h:mm a").format("HH"));
+$("#1Row").attr("data-time", moment("1:00pm", "h:mm a").format("HH"));
+$("#2Row").attr("data-time", moment("2:00pm", "h:mm a").format("HH"));
+$("#3Row").attr("data-time", moment("3:00pm", "h:mm a").format("HH"));
+$("#4Row").attr("data-time", moment("4:00pm", "h:mm a").format("HH"));
+$("#5Row").attr("data-time", moment("5:00pm", "h:mm a").format("HH"));
+$("#6Row").attr("data-time", moment("6:00pm", "h:mm a").format("HH"));
 
 
 $(document).ready(function() {
@@ -21,6 +24,7 @@ $(document).ready(function() {
 
 
     var currentDay = moment().format('dddd, MMMM Do');
+    console.log(currentDay);
 
     $("#currentDay").text(currentDay);
 
@@ -55,7 +59,6 @@ $(document).ready(function() {
     });
 
 
-
     saveBtn.on("click", function () {
         
         var hour = $(this).attr("data-hour");
@@ -69,7 +72,6 @@ $(document).ready(function() {
     });
 
 
-    
     function renderPlans() {
         
         for (var i = 1; i <= 12; i++) {
@@ -77,7 +79,5 @@ $(document).ready(function() {
             $("#" + i + "Row").val(localStorage.getItem(i));
         }
     }
-
-
 
 });
